@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-color:#efd8b0;
+}
+
+.container{
+    width:750px;
+    height:550px;
+    margin:50px auto;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0px 0px 15px gray;
+}
+
+/* Left Side */
+
+.left{
+    width:45%;
+    background-color:brown;;
+    text-align:center;
+    padding:30px;
+    color:white;
+}
+
+.left h1{
+    color:gold;
+    font-size:40px;
+}
+
+.left p{
+    font-size:20px;
+    font-style:italic;
+}
+
+.left img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.left h3{
+    margin-top:30px;
+    color:gold;
+}
+
+
+
+
+/* Right Side */
+
+.right{
+    width:55%;
+    background-color:#f5f5f5;
+    text-align:center;
+    padding:25px 35px;
+    box-sizing:border-box;
+}
+
+.userLogo{
+    width:90px;
+    height:90px;
+}
+
+.right h2{
+    color:brown;
+    font-size:32px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+form{
+    width:100%;
+}
+
+label{
+    display:block;
+    text-align:left;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-size:16px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid gray;
+    border-radius:20px;
+    box-sizing:border-box;
+    font-size:15px;
+    margin-bottom:8px; 
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#8B0000;
+}
+
+/*forgot password link*/
+a{
+    display:block;
+    margin-top:15px;
+    margin-bottom:12px;
+    text-decoration:none;
+    color:brown;
+}
+
+a:hover{
+    text-decoration:underline;
+}

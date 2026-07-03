@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff & Admin Registration</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="image-section">
+        <img src="chef.jpg" alt="Chef Image">
+    </div>
+
+    <div class="form-section">
+
+        <h1>Delicious Bites</h1>
+        <h2>Staff & Admin Registration</h2>
+
+        <p>Create your account to access the Restaurant Management System.</p>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+            <input type="text"
+                   name="fullName"
+                   placeholder="Enter Full Name"
+                   required>
+
+            <label>Username</label>
+            <input type="text"
+                   name="username"
+                   placeholder="Enter Username"
+                   required>
+
+            <label>Email</label>
+            <input type="email"
+                   name="email"
+                   placeholder="Enter Email"
+                   required>
+
+            <label>Phone Number</label>
+            <input type="tel"
+                   name="phoneNumber"
+                   placeholder="Enter Phone Number"
+                   required>
+
+            <label>Password</label>
+            <input type="password"
+                   name="password"
+                   placeholder="Enter Password"
+                   required>
+
+            <label>Confirm Password</label>
+            <input type="password"
+                   name="confirmPassword"
+                   placeholder="Confirm Password"
+                   required>
+
+            <label>Role</label>
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="ADMIN">Admin</option>
+                <option value="STAFF">Staff</option>
+            </select>
+
+            <div class="button-group">
+
+                <button type="submit">
+                    Register
+                </button>
+
+                <a href="home.html">
+                    <button type="button">
+                        Back to Home
+                    </button>
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="Register.js"></script>
+
+</body>
+</html>

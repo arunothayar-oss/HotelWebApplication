@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-color:#efd8b0;
+}
+
+.container{
+    width:800px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+h1{
+    text-align:center;
+    color:#8B0000;
+    margin-bottom:30px;
+}
+
+h2{
+    text-align:center;
+    color:#8B0000;
+    margin-top:30px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.row label{
+    width:180px;
+    font-weight:bold;
+}
+
+.row input,
+.row select{
+    width:250px;
+    padding:8px;
+}
+
+.button-row{
+    text-align:center;
+    margin-top:20px;
+}
+
+#addBtn{
+    background:#8B0000;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#8B0000;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    border:1px solid gray;
+    text-align:center;
+    padding:10px;
+}
+
+.grand-total{
+    margin-top:25px;
+    text-align:right;
+}
+
+.grand-total input{
+    width:150px;
+    padding:8px;
+}
+
+.bottom-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+#saveOrderBtn{
+    background:#8B0000;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+#clearBtn{
+    background:#b5651d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+#dashboardBtn{
+    background:#8B0000;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+#dashboardBtn:hover{
+    opacity:0.9;
+    cursor:pointer;
+}
+#logoutBtn{
+    background:#b5651d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+#logoutBtn:hover{
+    opacity:0.9;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+    cursor:pointer;
+}

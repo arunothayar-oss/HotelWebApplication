@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing Screen</title>
+    <link rel="stylesheet" href="Billing.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>BILLING SCREEN</h1>
+
+        <div class="bill-details">
+
+            <div class="form-group">
+                <label>Bill Number</label>
+                <input type="text" id="billNo">
+            </div>
+
+            <div class="form-group">
+                <label>Table Number</label>
+                <input type="text" id="tableNo">
+            </div>
+
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" id="customerName">
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" id="billDate">
+            </div>
+
+        </div>
+
+        <h2>ORDER DETAILS</h2>
+
+        <table id="billTable">
+            <thead>
+                <tr>
+                    <th>Dish Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody id="billTableBody">
+            </tbody>
+        </table>
+
+        <div class="summary">
+
+            <div class="summary-row">
+                <label>Subtotal :</label>
+                <input type="text" id="subTotal" >
+            </div>
+
+            <div class="summary-row">
+                <label>GST (5%) :</label>
+                <input type="text" id="gst" readonly>
+            </div>
+
+            <div class="summary-row">
+                <label>Grand Total :</label>
+                <input type="text" id="grandTotal" readonly>
+            </div>
+
+        </div>
+
+        <div class="button-group">
+            <button id="generateBtn">Generate Bill</button>
+            <button id="printBtn">Print Bill</button>
+            <button id="clearBtn">Clear</button>
+            <button id="dashboardBtn">
+        Dashboard
+    </button>
+
+        </div>
+
+    </div>
+
+    <script src="Billing.js"></script>
+
+</body>
+</html>
