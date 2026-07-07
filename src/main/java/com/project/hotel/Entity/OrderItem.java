@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @Table(name = "order_items")
 public class OrderItem 
 {
-     @Id
+      @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "item_id")
     private Integer itemId;
@@ -13,13 +13,19 @@ public class OrderItem
     @Column(name = "order_id")
     private Integer orderId;
 
+    @Column(name = "category")
+    private String category;
+
     @Column(name = "item_name")
     private String itemName;
 
+    @Column(name = "quantity")
     private Integer quantity;
 
+    @Column(name = "price")
     private Double price;
 
+    @Column(name = "total")
     private Double total;
 
     public OrderItem() {
@@ -39,6 +45,14 @@ public class OrderItem
 
     public void setOrderId(Integer orderId) {
         this.orderId = orderId;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getItemName() {
@@ -73,3 +87,4 @@ public class OrderItem
         this.total = total;
     }
 }
+

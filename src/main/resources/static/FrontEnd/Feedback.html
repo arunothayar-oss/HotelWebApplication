@@ -27,23 +27,27 @@
             <label for="customerName">
                 Customer Name
             </label>
+            <div class="input-container">
 
             <input type="text"
                    id="customerName"
                   
                    placeholder="Enter your name"
                    required>
+                    <span class="star">*</span>
+                  </div> 
 
             <label for="email">
                 Email
             </label>
-
-            <input type="email"
+             <div class="input-container">
+             <input type="email"
                    id="email"
                   
                    placeholder="Enter your email"
                    required>
-
+             <span class="star">*</span>
+                 </div>
             <label for="rating">
                 Rating
             </label>
@@ -76,13 +80,15 @@
             <label for="message">
                 Your Feedback
             </label>
-
+             <div class="input-container">
             <textarea id="message"
                       
                       rows="5"
                       placeholder="Write your feedback here"
                       required>
             </textarea>
+             <span class="star">*</span>
+            </div>
 
             <button type="submit">
                 Submit Feedback

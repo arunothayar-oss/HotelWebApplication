@@ -99,20 +99,22 @@ header p{
 {
     background-color:#333;
 }
-/* Media Query */
-
-@media (max-width:768px)
-{
-
-    .container{
-        width:95%;
-    }
-
-    .image-section{
-        height:200px;
-    }
-
-    header h1{
-        font-size:28px;
-    }
+.input-container{
+    position: relative;
+    width: 100%;
 }
+
+.input-container input{
+    padding-right: 30px;
+}
+
+.star{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 18px;
+    pointer-events: none;
+}
+

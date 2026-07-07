@@ -47,8 +47,9 @@ h2 {
 
 p {
     text-align: center;
-    color: gray;
+    color: rgb(29, 28, 28);
     margin-bottom: 25px;
+    line-height:1.5;
 }
 
 label {
@@ -86,5 +87,24 @@ select {
 
 .button-group button:hover {
     background-color: #A52A2A;
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+}
+
+.input-container input{
+    padding-right: 30px;
+}
+
+.star{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 18px;
+    pointer-events: none;
 }
 

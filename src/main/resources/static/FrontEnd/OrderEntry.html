@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Order Entry</title>
 
     <link rel="stylesheet" href="OrderEntry.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>ORDER ENTRY</h1>
+    <!-- Banner -->
+
+    <div class="banner">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200"
+             alt="Restaurant Banner">
+
+        <div class="banner-text">
+            <h1>🍽 ORDER ENTRY</h1>
+            <p>Fresh Food • Fast Service • Happy Customers</p>
+        </div>
+
+    </div>
+
+    <!-- Form -->
 
     <div class="form-section">
 
         <div class="row">
-            <label for="customerName">Customer Name</label>
+            <label>Customer Name</label>
             <input type="text"
                    id="customerName"
                    placeholder="Enter Customer Name">
         </div>
 
         <div class="row">
-            <label for="tableNumber">Table Number</label>
+            <label>Table Number</label>
             <input type="number"
                    id="tableNumber"
                    placeholder="Enter Table Number">
         </div>
 
         <div class="row">
-            <label for="foodItem">Food Item</label>
+            <label>Category</label>
 
-            <select id="foodItem">
+            <select id="category">
 
-                <option value="">Select Item</option>
+                <option value="">Select Category</option>
 
-                <option value="BURGER">Burger</option>
+                <option value="BREAKFAST">🍳 Breakfast</option>
 
-                <option value="PIZZA">Pizza</option>
+                <option value="LUNCH">🍛 Lunch</option>
 
-                <option value="DOSA">Dosa</option>
+                <option value="DINNER">🍽 Dinner</option>
 
-                <option value="FRIED RICE">Fried Rice</option>
-
-                <option value="COFFEE">Coffee</option>
+                <option value="BEVERAGES">☕ Beverages</option>
 
             </select>
+
         </div>
 
         <div class="row">
-            <label for="quantity">Quantity</label>
+            <label>Food Item</label>
+
+            <select id="foodItem">
+
+                <option value="">
+                    Select Category First
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="row">
+            <label>Quantity</label>
+
             <input type="number"
                    id="quantity"
                    placeholder="Enter Quantity">
         </div>
 
         <div class="row">
-            <label for="price">Price</label>
+            <label>Price</label>
+
             <input type="number"
                    id="price"
                    readonly>
         </div>
 
         <div class="row">
-            <label for="total">Total</label>
+            <label>Total</label>
+
             <input type="number"
                    id="total"
                    readonly>
         </div>
 
         <div class="button-row">
-            <button type="button" id="addBtn">
+
+            <button id="addBtn">
                 Add Item
             </button>
+
         </div>
 
     </div>
@@ -84,15 +119,23 @@
     <table id="orderTable">
 
         <thead>
-            <tr>
-                <th>Item Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
-            </tr>
+
+        <tr>
+
+            <th>Category</th>
+
+            <th>Food Item</th>
+
+            <th>Quantity</th>
+
+            <th>Price</th>
+
+            <th>Total</th>
+
+        </tr>
+
         </thead>
 
-        <!-- IMPORTANT -->
         <tbody id="tableBody">
 
         </tbody>
@@ -101,9 +144,7 @@
 
     <div class="grand-total">
 
-        <label for="grandTotal">
-            Grand Total
-        </label>
+        <label>Grand Total</label>
 
         <input type="text"
                id="grandTotal"
@@ -113,24 +154,21 @@
 
     <div class="bottom-buttons">
 
-        <button type="button"
-                id="saveOrderBtn">
+        <button id="saveOrderBtn">
             Save Order
         </button>
 
-        <button type="button"
-                id="clearBtn">
+        <button id="clearBtn">
             Clear
         </button>
-        <button type="button"
-            id="dashboardBtn">
-        Dashboard
-    </button>
-    <button type="button" id="logoutBtn">
-        Logout
-    </button>
 
+        <button id="dashboardBtn">
+            Dashboard
+        </button>
 
+        <button id="logoutBtn">
+            Logout
+        </button>
 
     </div>
 
@@ -139,4 +177,5 @@
 <script src="OrderEntry.js"></script>
 
 </body>
+
 </html>

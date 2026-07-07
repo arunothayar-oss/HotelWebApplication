@@ -2,7 +2,9 @@ package com.project.hotel.DTO;
 
 public class OrderItemDTO 
 {
-     private String itemName;
+      private String category;
+
+    private String itemName;
 
     private Integer quantity;
 
@@ -11,6 +13,14 @@ public class OrderItemDTO
     private Double total;
 
     public OrderItemDTO() {
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getItemName() {

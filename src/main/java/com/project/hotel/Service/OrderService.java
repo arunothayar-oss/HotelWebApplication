@@ -33,6 +33,10 @@ public class OrderService
             OrderItem item = new OrderItem();
 
             item.setOrderId(savedOrder.getOrderId());
+
+            // New field
+            item.setCategory(itemDTO.getCategory());
+
             item.setItemName(itemDTO.getItemName());
             item.setQuantity(itemDTO.getQuantity());
             item.setPrice(itemDTO.getPrice());
@@ -44,3 +48,4 @@ public class OrderService
         return "Order Saved Successfully";
     }
 }
+
