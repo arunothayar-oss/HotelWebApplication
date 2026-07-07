@@ -23,48 +23,69 @@
         <form id="registerForm">
 
             <label>Full Name</label>
+            <div class="input-container">
             <input type="text"
                    name="fullName"
                    placeholder="Enter Full Name"
                    required>
+                   <span class="star">*</span>
+                </div>   
 
             <label>Username</label>
+    <div class="input-container">
             <input type="text"
                    name="username"
                    placeholder="Enter Username"
                    required>
+                <span class="star">*</span>
+                </div>
 
             <label>Email</label>
+            <div class="input-container">
             <input type="email"
                    name="email"
                    placeholder="Enter Email"
                    required>
+            <span class="star">*</span>
+            </div>
 
             <label>Phone Number</label>
+            <div class="input-container">
             <input type="tel"
                    name="phoneNumber"
                    placeholder="Enter Phone Number"
                    required>
+                <span class="star">*</span>
+                </div>
 
             <label>Password</label>
+            <div class="input-container">
             <input type="password"
                    name="password"
                    placeholder="Enter Password"
                    required>
+            <span class="star">*</span>
+            </div>
 
             <label>Confirm Password</label>
+            <div class="input-container">
             <input type="password"
                    name="confirmPassword"
                    placeholder="Confirm Password"
                    required>
+            <span class="star">*</span>
+            </div>
 
             <label>Role</label>
+            <div class="input-container">
             <select name="role" required>
                 <option value="">Select Role</option>
                 <option value="ADMIN">Admin</option>
                 <option value="STAFF">Staff</option>
             </select>
+           <span class="star">*</span> 
 
+</div>
             <div class="button-group">
 
                 <button type="submit">

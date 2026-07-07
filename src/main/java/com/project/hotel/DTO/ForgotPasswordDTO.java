@@ -1,34 +1,54 @@
 package com.project.hotel.DTO;
 
-public class ForgotPasswordDTO {
-     private String username;
+public class ForgotPasswordDTO 
+{
+    private String username;
     private String role;
+    private String otp;
     private String newPassword;
 
-    public ForgotPasswordDTO() {
+    public ForgotPasswordDTO()
+    {
+
     }
 
-    public String getUsername() {
+    public String getUsername()
+    {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setUsername(String username)
+    {
         this.username = username;
     }
 
-    public String getRole() {
+    public String getRole()
+    {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(String role)
+    {
         this.role = role;
     }
 
-    public String getNewPassword() {
+    public String getOtp()
+    {
+        return otp;
+    }
+
+    public void setOtp(String otp)
+    {
+        this.otp = otp;
+    }
+
+    public String getNewPassword()
+    {
         return newPassword;
     }
 
-    public void setNewPassword(String newPassword) {
+    public void setNewPassword(String newPassword)
+    {
         this.newPassword = newPassword;
     }
 }

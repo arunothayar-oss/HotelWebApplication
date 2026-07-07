@@ -54,7 +54,8 @@ public class SecurityConfig {
                         "/api/register",
                         "/api/feedback",
                         "/api/forgot-password",
-                          "/forgotpassword"
+                          "/forgotpassword",
+                          "/sendotp"
 
                 ).permitAll()
 
